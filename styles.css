@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 14px;
+    color: white;
+    background-color: hsl(218, 28%, 13%);
+    min-width: 100%;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-wrapper{
+    position: relative;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    color: #A0A4AD;
+}
+
+.logo{
+    margin-left: 5rem;
+    margin-top: 2rem;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: grey;
+}
+
+.navbar li{
+    margin-right: 3rem;
+    margin-top: 2rem;
+}
+
+.bg1{
+    width: 100%;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url(images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-position: bottom;
+}
+
+#start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 250px;
+}
+
+.intro img{
+    width: 100%;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top h1{
+    white-space: pre-line;
+    text-align: center;
+    font-size: 3.5rem;
+    width: 70%;
+    padding-bottom: 2rem;
+}
+
+.top p{
+    text-align: center;
+    white-space:normal;
+    width: 40%;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+}
+
+.top button{
+    font-size: 1.2rem;
+    border-style: none;
+    border-radius: 30px;
+    padding: 1rem;
+    width: 18rem;
+    background-color: #3FB5D5;
+    color: white;
+}
+
+#benefits{
+    display: flex;
+    padding-bottom: 250px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.benef{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    width: 20%;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.benef h3{
+    padding-bottom: .4rem;
+    font-size: 1.3rem;
+}
+
+#work{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-bottom: 250px;
+}
+
+#productive img{
+    width: 100%;
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 3rem;
+}
+
+.works h2{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.works p{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hyper{
+    display: flex;
+    width: 100%;
+    
+}
+
+.works a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    color: hsl(176, 68%, 64%);
+    text-decoration: none;
+    border-bottom: 1px solid #3FB5D5;
+}
+
+.hyper img{
+    padding-left: .3rem;
+    height: 20px;
+}
+
+#comments{
+    display: flex;
+    justify-content: center;
+    height: 18rem;
+    padding-bottom: 250px;
+}
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#quoteHold{
+    position: relative;
+}
+
+#quoteHold::before{
+    content: url(images/bg-quotes.png);
+    position: absolute;
+    bottom: 15.5rem;
+    z-index: -1;
+}
+
+.test p{
+    width: 90%;
+}
+
+.comment{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(219, 30%, 18%);
+    margin: 10px;
+    box-shadow: 8px 7px 2px #2b3d58;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.allComm{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.profile{
+    display: flex;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+}
+
+.name{
+    margin-left: 10px;
+}
+
+.photo img{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 250px;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+    justify-content: center;
+    border-radius: 12px;
+    padding: 1rem;
+    z-index: 1;
+    margin-bottom: 33rem;
+}
+
+.sign-up h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.sign-up p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.sign-up input{
+    padding: .8rem;
+    border-radius: 25px;
+    width: 500px;
+    margin-right: 1rem;
+    border: 0;
+}
+
+.sign-up input[type="email"]:placeholder-shown{
+    padding-left: 1.8rem;
+}
+
+.sign-up button{
+    border-style: none;
+    border-radius: 18px;
+    padding: .8rem;
+    background-color: hsl(198, 60%, 50%);
+    color: white;
+    font-weight: 400;
+}
+
+button:hover{
+    background-color: hsl(176, 68%, 64%);
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(216, 53%, 9%);
+    width: 100%;
+}
+
+#footerWrapper{
+    position: relative;
+    padding-bottom: 10rem;
+    padding-top: 25rem;
+}
+
+.footLogo img{
+    width: 8%;
+    position: absolute;
+    bottom: 18rem;
+    left: 19rem;
+}
+
+#columns{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    color: #A0A4AD;
+}
+
+.column li{
+    list-style: none;
+    margin-top: .3rem;
+ }
+
+.columnLoc{
+    display: flex;
+    width: 45%;
+    margin: 0 auto;
+    padding-left: 9rem;
+}
+
+.location{
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+}
+
+.columnLoc p{
+    display: flex;
+    align-items: center;
+}
+
+.column-social{
+   display: flex;
+   align-items: center;
+   padding-bottom: 4rem;
+}
+
+.column-social a{
+    display: inline-block;
+    color: white;
+    border-radius: 50%;
+    width: 2.5rem;
+    margin-right: 1rem;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.column-social i{
+    font-size: 1.6rem;
+    padding: .4rem;
+}
+
+.column-social a:hover{
+    color: hsl(176, 68%, 64%);
+    border: 1px solid hsl(176, 68%, 64%);
+}
+
+.mail, .phone{
+    display: flex;
+    margin-top: 10px;
+}
+
+.phLogo{
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.lists{
+    display: flex;
+    align-items: baseline;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 875px){
+
+    #header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding-right: 20px;
+        margin-left: 25px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .navbar ul{
+        margin: 0;
+        padding-top: 3px;
+    }
+
+    .navbar li{
+        white-space: nowrap;
+        margin-right: 15px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #start{
+        padding-top: 6rem;
+        padding-bottom: 8rem;
+    }
+
+    .top h1{
+        font-size: 25px;
+        width: 90%;
+    }
+
+    .top p{
+        font-size: 15px;
+        width: 85%;
+    }
+
+    .grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .benef{
+        width: 85%;
+    }
+
+    #work{
+        width: 100%;
+    }
+
+    .works{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #productive{
+        width: 90%;
+    }
+
+    .works h2{
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+
+    .works p{
+        font-size: 1.1rem;
+        padding: 0 2rem;
+    }
+
+    .hyper{
+        width: 85%;
+    }
+
+    .hyper a{
+        font-size: 1.1rem;
+    }
+
+    .allComm{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .comment{
+    padding: .4rem;
+    margin-top: 20px;
+    }
+
+    #quoteHold::before{
+        bottom: 11rem;
+    }
+
+    .sign-up{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 75%;
+        margin-bottom: 50rem;
+    }
+
+    .sign-up h2{
+        font-size: 1.4rem;
+    }
+
+    .sign-up p{
+        font-size: 1rem;
+    }
+
+    .sign-up input{
+        width: 200px;
+        align-self: center;
+        margin: 0;
+    }
+
+    .sign-up button{
+        width: 240px;
+        padding: .9rem;
+        border-radius: 50px;
+        margin-top: 1rem;
+    }
+
+    footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    #footerWrapper{
+        padding-bottom: 0rem;
+        padding-top: 10rem;
+    }
+
+    .footLogo{
+        padding-top: 15rem;
+    }
+
+    .footLogo img{
+       width: 40%;
+       top: 21rem;
+       left: 1rem;
+    }
+
+    #columns{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    .column{
+    padding-left: 2rem;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 2rem;
+    }
+
+    .location{
+       margin: 0;
+       margin-right: 10px;
+    }
+
+    .columnLoc{
+        margin: 0;
+        padding-left: 1rem;
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+
+    .lists{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-social{
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+
+    .bg1{
+    width: 100%;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url(images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: bottom;
+}
+
+}
+
+@media screen and (min-width: 360px) and (max-width: 395px) {
+    #quoteHold::before{
+        bottom: 12rem;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 875px){
+
+  #quoteHold::before{
+        bottom: 8rem;
+    }
+
+  .footLogo img{
+      width: 20%;
+  }
+}
